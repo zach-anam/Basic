@@ -1,0 +1,146 @@
+body {
+  box-sizing: border-box;
+}
+:root {
+  --b: cornflowerblue;
+}
+.container {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.container,
+.menu,
+.introduction,
+.sidebar,
+footer {
+  width: 800px;
+  margin: 0 auto;
+}
+.header {
+  overflow: hidden;
+}
+.title a {
+  float: left;
+  text-decoration: none;
+  color: var(--b); 
+  border: 1px solid var(--b);
+  padding: 20px;
+}
+.title a:hover {
+  background-color: var(--b);
+  color: white;
+}
+form {
+  float: right;
+}
+input[type="submit" i]  {
+  border: 1px solid var(--b);
+  color: var(--b);
+  font-weight: bold;
+  padding: 5px;
+  background-color: transparent;
+}
+input[type="submit" i]:hover  {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  background-color: var(--b);
+}
+.clear {
+  clear: both;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu ul {
+  padding-left: 0px;
+}
+.menu ul li {
+  float: left;
+  padding: 0px 20px;
+  list-style: none;
+  border-right: 1px solid black;
+}
+.menu ul li:last-child {
+  border-right: none;
+}
+.menu ul li a:hover,
+.menu ul li a.active {
+  font-weight: bold;
+  background-color: var(--b);
+  color: white;
+  padding: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: var(--b);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.introduction {
+  border: 1px solid var(--b);
+  margin: 20px auto;
+  padding: 20px 0px;
+  height: 400px;
+  text-indent: 20px;
+  border-radius: 5px;
+}
+.introduction > p {
+  line-height: 1.5;
+  padding: 0px 20px;
+  word-break: break-all;
+}
+a[href^="https"]{
+ text-decoration: none; 
+}
+.introduction a[href^="https"]::after {
+  content: "(Secure)";
+  font-size: 12px;
+  color: var(--b);
+}
+.sidebar {
+  overflow: hidden;
+}
+.leftside {
+  float: left;
+}
+.rightside {
+  float: right;
+}
+.leftside,
+.rightside {
+  width: 310px;
+  height: 300px;
+  border: 1px solid var(--b);
+  margin: 40px;
+  border-radius: 5px;
+  text-indent: 20px;
+}
+.sidebar p {
+  padding-left: 20px;
+}
+footer {
+  height: 100px;
+  text-align: center;
+  line-height: 68px;
+}
+/*xs*/
+@media (max-width: 576px) {
+}
+
+/*sm*/
+@media (min-width: 576px) and (max-width: 768px) {
+}
+
+/*md*/
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/*lg*/
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/*xl*/
+@media (min-width: 1200px){
+}
